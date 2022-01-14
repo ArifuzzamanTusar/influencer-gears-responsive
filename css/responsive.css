@@ -1,52 +1,141 @@
+/* DESKTOP  */
+section {
+  padding: 0px 10px;
+}
+
 .mobile-menu {
   display: none;
 }
-
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 /* Large display 1200px and above */
+/* |||||||||||||||||||||||||||||||||||||||| */
 @media screen and (min-width: 1200px) {
-  /* write code here */
+  section {
+    padding: 0px 10px;
+  }
 }
 
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 /* Portrait tablets 768px and above */
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* write code here */
+  section {
+    padding: 0px 10px;
+  }
+
+  /* ------------- PRIDUCTS -------------  */
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 /* Phones to tablets 767px and below */
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 @media screen and (max-width: 767px) {
-  /* write code here */
+  section {
+    padding: 0px 10px;
+  }
+
   .container-lg,
   .container-md {
     width: 100%;
   }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 /* Phones 480px and below */
+/* |||||||||||||||||||||||||||||||||| ||||||*/
 @media screen and (max-width: 480px) {
-
-  section{
-    padding:0px  10px;
-  }
-
-  /* -----------  Mneu  ---- */
-  .desktop-menu{
-    display: none;
-  }
-  .mobile-menu{
-    display: block;
+  /* Global */
+  section {
+    padding: 0px 10px;
   }
   .container-lg,
-  .container-md {
+  .container-md,
+  .container {
     max-width: 100%;
   }
+  /* -----------  Mneu  ---- */
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
   .logo-nav .text-logo {
     font-size: 16px;
   }
-  .header-area{
+  .header-area {
     margin-top: 35px;
   }
-  .header-area .iconify{
+  .header-area .iconify {
     font-size: 24px;
   }
 
+  /* -------- Hero -------- */
+  #hero .flex {
+    flex-direction: column-reverse;
+  }
+  #hero .content,
+  #hero .hero-image {
+    width: 100%;
+  }
+  .animated-featured-image {
+    text-align: center;
+  }
+  .hero-image .image-bg {
+    width: 257px;
+    height: 257px;
+  }
+  .animated-featured-image .camera {
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    text-align: center;
+  }
+  .content .title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  /* ---------------- CLIENTS ----------  */
+  #clients .client img {
+    padding: 10px 15px;
+  }
+  .alibaba img {
+    width: 33.38px;
+  }
+
+  .amazon img {
+    width: 50px;
+  }
+  .daraz img {
+    width: 51.17px;
+  }
+  .ebay img {
+    width: 44.41px;
+  }
+  .rakuten img {
+    width: 58.86px;
+  }
+  .target img {
+    width: 67.31px;
+  }
+  .walmart img {
+    width: 67.68px;
+  }
+
+  /* ------------- PRIDUCTS -------------  */
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }

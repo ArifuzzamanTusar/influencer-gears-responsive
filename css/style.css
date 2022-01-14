@@ -19,6 +19,41 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.container-md {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1047px;
+  margin: 0 auto;
+}
+
+/* ======= Layout ====== */
+.flex {
+  display: flex;
+}
+.align-item-center {
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+/* White-spacing  */
+.py50px {
+  padding: 50px 0px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.pt30 {
+  padding-top: 30px;
+}
 
 /* Typography */
 h1,
@@ -30,8 +65,23 @@ h6,
 p,
 ul {
   margin: 0;
+  color: var(--dark);
 }
 
+/* Components  */
+.btn {
+  padding: 10px 24px;
+  border-radius: 41px;
+  text-decoration: none;
+}
+.btn-primary {
+  color: white;
+  background: var(--primary);
+}
+
+.btn-secondery {
+  color: var(--primary);
+}
 /* nav Menu  */
 
 .header-area {
@@ -52,10 +102,10 @@ ul {
 
 /* MENU  AND CART*/
 .menu-cart {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .menu-cart .menu-area ul li {
   display: inline;
 }
@@ -76,7 +126,7 @@ ul {
 
 /* cart and search  */
 
-.menu-cart .cart .iconify{
+.menu-cart .cart .iconify {
   font-size: 36px;
   color: var(--dark);
 }
@@ -84,4 +134,150 @@ ul {
   font-size: 24px;
   color: var(--dark);
   padding-right: 34px;
+}
+
+/* ------- HERO SECTION ----  */
+#hero .content,
+#hero .hero-image {
+  width: 50%;
+}
+.animated-featured-image {
+  text-align: right;
+}
+.hero-image .camera {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+.hero-image .image-bg {
+  width: 80%;
+}
+
+.content .title {
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 70px;
+}
+.content .subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Clients  */
+#clients .client img {
+  padding: 0px 30px;
+}
+#clients .flex {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.client-logo-wrapper {
+  padding: 36px 0px;
+}
+#clients .border {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+.alibaba img {
+  width: 55.05px;
+}
+
+.amazon img {
+  width: 84px;
+}
+.daraz img {
+  width: 84px;
+}
+.ebay img {
+  width: 99.12px;
+}
+.rakuten img {
+  width: 97.06px;
+}
+.target img {
+  width: 111px;
+}
+.walmart img {
+  width: 91px;
+}
+
+/* ======== product ===============
+ */
+#popular .section-heading {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 70px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.product-wrapper {
+  padding: 17px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.product-wrapper img {
+  width: 100%;
+}
+.product-wrapper .product-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+}
+.product-wrapper .price {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+}
+.product-wrapper .ratings {
+  color: #fb8200;
+}
+.product-wrapper .product-disc {
+  width: 196px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #787885;
+}
+
+.footer-container {
+  background: var(--dark-bg);
+}
+.footer-container .footer-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.footer-container .footer-text {
+  color: #d9dbe1;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.social-icons .iconify-inline {
+  font-size: 18px;
+  color: white;
+  background: #ffffff4d;
+  padding: 10px;
+  border-radius: 100px;
 }
