@@ -1,3 +1,6 @@
+.mobile-menu {
+  display: none;
+}
 
 /* Large display 1200px and above */
 @media screen and (min-width: 1200px) {
@@ -12,9 +15,38 @@
 /* Phones to tablets 767px and below */
 @media screen and (max-width: 767px) {
   /* write code here */
+  .container-lg,
+  .container-md {
+    width: 100%;
+  }
 }
 
 /* Phones 480px and below */
 @media screen and (max-width: 480px) {
-  /* write code here */
+
+  section{
+    padding:0px  10px;
+  }
+
+  /* -----------  Mneu  ---- */
+  .desktop-menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  .container-lg,
+  .container-md {
+    max-width: 100%;
+  }
+  .logo-nav .text-logo {
+    font-size: 16px;
+  }
+  .header-area{
+    margin-top: 35px;
+  }
+  .header-area .iconify{
+    font-size: 24px;
+  }
+
 }
