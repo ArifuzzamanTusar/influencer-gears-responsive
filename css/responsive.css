@@ -142,6 +142,8 @@ section {
   /* cta  */
   #call-to-action .cta-container {
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
   }
   .cta-container .image-box,
   .cta-container .content {
