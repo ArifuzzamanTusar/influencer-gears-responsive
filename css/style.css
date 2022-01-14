@@ -73,6 +73,8 @@ ul {
   padding: 10px 24px;
   border-radius: 41px;
   text-decoration: none;
+  border: none;
+  font-size: 16px;
 }
 .btn-primary {
   color: white;
@@ -258,6 +260,32 @@ ul {
   letter-spacing: 0.018em;
   color: #787885;
 }
+
+/* ------ CTA --------  */
+
+#call-to-action .cta-container {
+  display: flex;
+}
+.cta-container .image-box,
+.cta-container .content {
+  width: 50%;
+}
+.cta-container .content {
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.image-box img {
+  width: 100%;
+  border-radius: 15px;
+}
+.form-input{
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 1px solid rgb(211, 211, 211) ;
+    font-size: 16px;
+}
+/* ------FOOTER-----------  */
 
 .footer-container {
   background: var(--dark-bg);
