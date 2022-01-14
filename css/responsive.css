@@ -1,0 +1,20 @@
+
+/* Large display 1200px and above */
+@media screen and (min-width: 1200px) {
+  /* write code here */
+}
+
+/* Portrait tablets 768px and above */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* write code here */
+}
+
+/* Phones to tablets 767px and below */
+@media screen and (max-width: 767px) {
+  /* write code here */
+}
+
+/* Phones 480px and below */
+@media screen and (max-width: 480px) {
+  /* write code here */
+}
