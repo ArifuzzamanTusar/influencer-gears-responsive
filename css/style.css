@@ -75,14 +75,22 @@ ul {
   text-decoration: none;
   border: none;
   font-size: 16px;
+  transition: 0.5s;
 }
 .btn-primary {
   color: white;
   background: var(--primary);
 }
-
+.btn-primary:hover {
+  color: white;
+  background: var(--dark-bg);
+}
 .btn-secondery {
   color: var(--primary);
+}
+.btn-secondery:hover {
+  color: white;
+  background: var(--dark-bg);
 }
 /* nav Menu  */
 
@@ -128,14 +136,15 @@ ul {
 
 /* cart and search  */
 
-.menu-cart .cart .iconify {
+.menu-cart .cart .iconify-inline {
   font-size: 36px;
   color: var(--dark);
+  padding-left: 34px;
 }
-.menu-cart .search .iconify {
+.menu-cart .search .iconify-inline {
   font-size: 24px;
   color: var(--dark);
-  padding-right: 34px;
+  padding-left: 34px;
 }
 
 /* ------- HERO SECTION ----  */
@@ -272,8 +281,7 @@ ul {
 }
 .cta-container .content {
   text-align: right;
-  display: flex;
-  align-items: center;
+  padding: 80px 0px;
 }
 .image-box img {
   width: 100%;

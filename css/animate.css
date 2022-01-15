@@ -1,0 +1,51 @@
+.animated-bg-img{
+    animation: animated-bg-img 1.5s ease-in 0s infinite alternate ;
+}
+.btn-icon{
+    animation: camera-rotation 1s ease-in 0s infinite alternate ;
+}
+
+.product-content .image{
+    overflow: hidden;
+   
+    /* transform: scale(2,2); */
+    /* animation: camera-rotation 1s ease-in 0s infinite alternate ; */
+}
+.product-content .image img{
+    transition: 0.5s;
+}
+.product-content .image img:hover{
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+.social-icons .iconify-inline:hover{
+    animation: push 0.5s ease-in 0s infinite alternate ;
+}
+
+@keyframes push {
+    0%{
+        transform: translateY(-5px)
+     }
+     100%{
+        transform: translateY(5px)
+     }
+     
+}
+
+@keyframes camera-rotation {
+    0%{
+       transform: translate(10px)
+    }
+    
+}
+
+
+@keyframes animated-bg-img {
+    0%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(0.8,0.8);
+    }
+}

@@ -27,6 +27,15 @@ section {
   .product-grid {
     grid-template-columns: 1fr 1fr;
   }
+  #call-to-action .cta-container {
+    flex-direction: column;
+  
+  }
+  .cta-container .image-box,
+  .cta-container .content {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* |||||||||||||||||||||||||||||||||| ||||||*/
@@ -44,6 +53,15 @@ section {
 
   .product-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  #call-to-action .cta-container {
+    flex-direction: column;
+  
+  }
+  .cta-container .image-box,
+  .cta-container .content {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -142,15 +160,12 @@ section {
   /* cta  */
   #call-to-action .cta-container {
     flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+  
   }
   .cta-container .image-box,
   .cta-container .content {
     width: 100%;
     text-align: center;
   }
-  #call-to-action .content{
-    padding: 50px 10px;
-  }
+
 }
