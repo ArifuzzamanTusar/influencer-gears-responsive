@@ -294,6 +294,9 @@ ul {
     font-size: 16px;
     text-align: center;
 }
+.form-controller{
+  margin: 5px;
+}
 /* ------FOOTER-----------  */
 
 .footer-container {
